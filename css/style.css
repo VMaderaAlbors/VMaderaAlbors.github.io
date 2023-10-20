@@ -1,4 +1,4 @@
-@media(min-width: 600px) {
+@media only screen and (min-width: 1000px) {
 	.container {
 		display: flex;
 		justify-content: space-around;
@@ -45,18 +45,31 @@ span {
 	font-weight: bold;
 }
 
+.container {
+	max-width: 30%;
+}
 
+.contEduca {
+	max-width: 90%;
+
+}
+
+.container,
+.contEduca {
+
+	margin: auto;
+}
 
 .container-box {
-	flex-basis: 20%;
+	flex-basis: 30%;
 	background-color: #f5d889;
+
 
 }
 
 .contEduca-box {
 	flex-basis: 30%;
 	background-color: #f5d889;
-
 
 }
 
@@ -66,6 +79,8 @@ span {
 	/* border: 1px black solid; */
 	border-radius: 5px;
 	padding: 0.5%;
+	margin: 0.5%;
+
 
 
 }
