@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CV</title>
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -23,16 +25,28 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav m-auto">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
+						<a class="nav-link disabled" aria-disabled="true" href="#">About me</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
+						<a class="nav-link" href="Cover Letter/Cover Letter.html">Cover letter</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled">Disabled</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Social Media
+						</a>
+						<ul class="dropdown-menu">
+							<li><a target="_blank" class="dropdown-item"
+									href="https://www.linkedin.com/in/victor-madera-albors-054247194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsghVutOpR7i1bGlJyv2WqQ%3D%3D">LinkId</a>
+							</li>
+							<li><a target="_blank" class="dropdown-item"
+									href="https://github.com/VMaderaAlbors/VMaderaAlbors.github.io">GitHub</a></li>
+							<li><a target="_blank" class="dropdown-item"
+									href="https://victormaderaeportfolio.wordpress.com/">WordPress</a></li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -49,30 +63,31 @@
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
 				aria-label="Slide 4"></button>
 		</div>
+		<h2>Skills</h2>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="images/screenCoding-adjust.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<!-- <h5>First slide label</h5>
-					<p>Some representative placeholder content for the first slide.</p> -->
+					<h5>HTML & CSS</h5>
+					<!-- <p>Some representative placeholder content for the first slide.</p> -->
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="images/cables-adjust.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-
+					<h5 class="text-dark">Ilustrations</h5>
 				</div>
 			</div>
-			<div class="carousel-item">
+			<div class="carousel-item  ">
 				<img src="images/JavaSript-adjust.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-
+					<h5 class="text-dark">JavaScript</h5>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="images/Cyberpunk-adjust.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-
+					<h5 class="text-dark">Adove Photoshop & Ilustrator</h5>
 				</div>
 
 			</div>
@@ -88,7 +103,7 @@
 			</button>
 		</div>
 	</div>
-	<h2 class="display-2 text">Education</h2>
+	<h2>Education</h2>
 	<div class="container pt-4">
 		<div class="row">
 
@@ -138,80 +153,141 @@
 				</div>
 			</div>
 		</div>
+		<h2>Experience</h2>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<h4>Assistant Retail Manager</h4>
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>Carroll's Irish Gifts</strong>
+						<ul class="text-start ms-5">
+							<li>Assist the Store manager in handling and motivating the team to increasesales and ensure
+								efficiency.
+							</li>
+							<li>Managing stock levels, supplier orders and making key decisions about stockcontrol.</li>
+							<li>Analysing sales figures and forecasting future sales.</li>
+							<li>Analysing and interpreting trends to facilitate planning.</li>
+							<li>Using information technology to record sales figures, for data analysis andforward
+								planning.</li>
+							<li>Ensuring standards for quality, customer service and health and safety aremet.</li>
+							<li>Resolving health and safety, legal and security issues.</li>
+							<li>Responding to customer complaints and comments.</li>
+							<li>Organising special promotions, displays and events</li>
+							<li>Attending and chairing meetings.</li>
+							<li>Updating colleagues on business performance, new initiatives and otherpertinent issues.
+							</li>
+							<li>Touring the sales floor regularly, talking to colleagues and customers andidentifying or
+								resolving
+								urgent
+								issues.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<h4>Manager</h4>
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>Carroll's Irish Gifts</strong>
+						<ul class="text-start ms-5">
+							<li>Assist the Store manager in handling and motivating the team to increasesales and ensure
+								efficiency.
+							</li>
+							<li>Managing stock levels, supplier orders and making key decisions about stockcontrol.</li>
+							<li>Analysing sales figures and forecasting future sales.</li>
+							<li>Analysing and interpreting trends to facilitate planning.</li>
+							<li>Using information technology to record sales figures, for data analysis andforward
+								planning.</li>
+							<li>Ensuring standards for quality, customer service and health and safety aremet.</li>
+							<li>Resolving health and safety, legal and security issues.</li>
+							<li>Responding to customer complaints and comments.</li>
+							<li>Organising special promotions, displays and events</li>
+							<li>Attending and chairing meetings.</li>
+							<li>Updating colleagues on business performance, new initiatives and otherpertinent issues.
+							</li>
+							<li>Touring the sales floor regularly, talking to colleagues and customers andidentifying or
+								resolving
+								urgent
+								issues.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<h4>Sales Floor Associate</h4>
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					<strong>Carroll's Irish Gifts</strong>
+					<ul class="text-start ms-5">
+						<li>Participated in physical inventory counts every time period.</li>
+						<li>Asked open-ended questions to asses customers' needs.</li>
+						<li>Maintained cleanliness and presentation of stockroom and production floor.</li>
+						<li>Learned referenced and applied product knowledge information.</li>
+						<li>Served as cashier when needed.</li>
+						<li>Coached, and developed new hires by informing them of store protocols,procedures and how to
+							better deal
+							with
+							customers.</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar-dark bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<p>Victor Madera Albors</p>
+			</a>
+
+			<div class="navbar-dark " id="navbarNav">
+				<ul class="navbar-nav  ">
+					<li class="nav-item ms-4">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item ms-4">
+						<a class="nav-link disabled" aria-disabled="true" href="#">About me</a>
+					</li>
+					<li class="nav-item ms-4">
+						<a class="nav-link" href="Cover Letter/Cover Letter.html">Cover letter</a>
+					</li>
+					<li class="nav-item dropdown ms-4">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Social Media
+						</a>
+						<ul class="dropdown-menu ms-4">
+							<li><a target="_blank" class="dropdown-item"
+									href="https://www.linkedin.com/in/victor-madera-albors-054247194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsghVutOpR7i1bGlJyv2WqQ%3D%3D">LinkId</a>
+							</li>
+							<li><a target="_blank" class="dropdown-item"
+									href="https://github.com/VMaderaAlbors/VMaderaAlbors.github.io">GitHub</a></li>
+							<li><a target="_blank" class="dropdown-item"
+									href="https://victormaderaeportfolio.wordpress.com/">WordPress</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 
 	</div>
-	<!-- <div id="main">
-		<h1>Victor Madera Albors</h1>
-		<h3>Vigmac@hotmail.com</h3>
-		<h3><a href="Cover Letter/index.html">Cover Letter
-			</a></h3>
-		<div class="container">
 
-			<div class="container-box"><a href="#education">Education</a></div>
-			<div class="container-box"><a href="#experience">Experience</a></div>
-			<div class="container-box"><a href="#skills">Skills</a></div>
-
-		</div>
-		<h2 id="education">Education</h2>
-		<div class="contEduca">
-			<div class="contEduca-box"><span>National College of Ireland</span></li>
-				<p>Higher Diploma in Science in Computing (Software & Web Development)</p>
-			</div>
-			<div class="contEduca-box"><span>Dublin Institute of Design</span></li>
-				<p>QQI Graphic Design Skills - Level 5 , Graphic Design · (September2020 - March 2021)</p>
-			</div>
-			<div class="contEduca-box"><span>School Maria Inmaculada</span></li>
-				<p>Spanish Junior certificate · (2000 - 2004)</p>
-			</div>
-		</div>
-		<h2 id="experience">Experience</h2>
-		<h3><span>Carroll's Irish Gifts</span></h3>
-		<h3><span>Assistant Retail Manager</span> January 2016 - Present</h3>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		<h3><span>Manager</span> February 2014 - January 2016</h3>
-		<ul>
-			<li>Assist the Store manager in handling and motivating the team to increasesales and ensure efficiency.
-			</li>
-			<li>Managing stock levels, supplier orders and making key decisions about stockcontrol.</li>
-			<li>Analysing sales figures and forecasting future sales.</li>
-			<li>Analysing and interpreting trends to facilitate planning.</li>
-			<li>Using information technology to record sales figures, for data analysis andforward planning.</li>
-			<li>Ensuring standards for quality, customer service and health and safety aremet.</li>
-			<li>Resolving health and safety, legal and security issues.</li>
-			<li>Responding to customer complaints and comments.</li>
-			<li>Organising special promotions, displays and events</li>
-			<li>Attending and chairing meetings.</li>
-			<li>Updating colleagues on business performance, new initiatives and otherpertinent issues.</li>
-			<li>Touring the sales floor regularly, talking to colleagues and customers andidentifying or resolving
-				urgent
-				issues.</li>
-		</ul>
-		<h3><span>Sales Floor Associate</span> January 2011 - 2014</h3>
-		<ul>
-			<li>Participated in physical inventory counts every time period.</li>
-			<li>Asked open-ended questions to asses customers' needs.</li>
-			<li>Maintained cleanliness and presentation of stockroom and production floor.</li>
-			<li>Learned referenced and applied product knowledge information.</li>
-			<li>Served as cashier when needed.</li>
-			<li>Coached, and developed new hires by informing them of store protocols,procedures and how to better deal
-				with
-				customers.</li>
-
-		</ul>
-		<h2 id="skills">Skills</h2>
-		<ul class="a">
-			<li>Html 5</li>
-			<li>Css 3</li>
-			<li>JavaScript</li>
-		</ul>
-		<h2></h2>
-	</div>-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 		crossorigin="anonymous"></script>
