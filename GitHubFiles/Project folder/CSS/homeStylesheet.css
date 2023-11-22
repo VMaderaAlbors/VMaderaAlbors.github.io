@@ -9,39 +9,18 @@
     }
 }
 
-.div1,
-.div2 {
-    width: 100px;
-    height: 100px;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.div1 {
-    background-color: aqua;
+* {
+    font-family: "Roboto", sans-serif;
 }
 
-.div2 {
-    background-color: blue;
+.tagline {
+    font-size: 0.7em;
 }
-
-.background::before {
-    background-image: url("../images/pexels-christina-morillo-1181373.jpg");
-    background-size: cover;
-    content: ' ';
-    display: block;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    position: absolute;
-    left: 0;
-    top: 200;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
-    border-radius: 5%;
-    object-fit: fill;
-}
-
-
 
 .main {
     position: relative;
@@ -52,6 +31,51 @@
     opacity: 2;
 
 }
+
+.div1,
+.div2 {
+    width: 100px;
+    height: 100px;
+}
+
+.div1 {
+    background-color: aqua;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.div2 {
+    background-color: blue;
+}
+
+.background::before {
+    background-image: url("../images/pexels-christina-morillo-1181373.jpg");
+
+    content: "";
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 5%;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+
 
 p {
     font-size: 2em;
@@ -67,17 +91,21 @@ h2 {
 }
 
 .button {
-    background-color: #9e9eae;
+    background-color: #FFD700;
     border: none;
-    color: white;
-    padding: 20px, ;
+    color: black;
+    padding: 10px, ;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 45%;
+    border-radius: 12px;
+    width: 120px;
+    height: 48px;
 }
 
 .navbar {
@@ -137,6 +165,8 @@ body {
 .footer {
     margin-top: auto;
 }
+
+
 
 /* .main {
     width: 100%;
