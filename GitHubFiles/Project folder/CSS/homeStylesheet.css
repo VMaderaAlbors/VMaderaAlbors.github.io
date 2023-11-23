@@ -1,4 +1,4 @@
-@media (max-width: 540px) {
+@media (max-width: 600px) {
 
     .videoPlayer {
         display: none;
@@ -9,14 +9,16 @@
     }
 }
 
+#logo {
+    height: 65px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-* {
-    font-family: "Roboto", sans-serif;
-}
+
 
 .tagline {
     font-size: 0.7em;
@@ -30,6 +32,14 @@ a {
     justify-content: center;
     opacity: 2;
 
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .div1,
@@ -77,9 +87,7 @@ a {
 
 
 
-p {
-    font-size: 2em;
-}
+
 
 h1 {
     font-family: "Oswald", sans-serif;
@@ -108,6 +116,10 @@ h2 {
     height: 48px;
 }
 
+.client {
+    height: 30px;
+}
+
 .navbar {
     z-index: 1;
 }
@@ -119,7 +131,7 @@ h2 {
     width: 100%;
     overflow: hidden;
     color: #fff;
-    z-index: -1;
+    z-index: 0;
 }
 
 .videoPlayer {
@@ -146,6 +158,10 @@ h2 {
     object-fit: fill;
 }
 
+.over.about {
+    background: rgba(73, 58, 16, 0.274);
+}
+
 .inner {
     position: absolute;
     top: 50%;
@@ -158,8 +174,11 @@ h2 {
 
 body {
 
+    font-family: "Roboto", sans-serif;
+
     display: flex;
     flex-direction: column;
+    font-size: 16px;
 }
 
 .footer {
