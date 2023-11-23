@@ -1,0 +1,55 @@
+
+
+.custom-box {
+    border: 2px solid goldenrod; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color:goldenrod;
+    text-align: center;
+    font-family: 'Oswald', sans-serif
+}
+h2{
+    color:goldenrod;
+    font-family: 'Oswald', sans-serif
+}
+
+.testimonial {
+    display: none;
+    border: 2px solid goldenrod;
+    padding: 10px;
+    margin: 10px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+#toggleButton {
+    background-color: goldenrod;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.previous-div {
+    margin-bottom: 10px; 
+}
+
+.following-div {
+    margin-top: 5px; 
+}
