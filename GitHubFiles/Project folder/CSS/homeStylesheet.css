@@ -200,16 +200,15 @@ body {
 } */
 
 /* Contact page css */
-.contact-page {
-    background-color: #e6f7ff; /* Light blue background for the contact page */
-    /* Add other styles for the contact page here */
+
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
-    color:white;
-    
+    color: white;
+
 }
+
 .centered {
     text-align: center;
 }
@@ -219,34 +218,56 @@ button {
     color: black !important;
     cursor: pointer;
 }
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 110;
-    color:#daa520
+    color: #daa520
 }
 
 form {
-    max-width: 700px; 
-    margin: 0 auto; 
-    
+    max-width: 700px;
+    margin: 0 auto;
+
 }
 
 input {
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    margin-bottom: 15px; 
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
     background-color: goldenrod
 }
-/* fields background color */ 
-#email {background-color: black;}
-#message {background-color: black;}
-#question {background-color: black;}
-#name {background-color: black;}
-#phone {background-color: black;}
-#answer {background-color: black;}
-#subject {background-color: black;}
+
+/* fields background color */
+#email {
+    background-color: black;
+}
+
+#message {
+    background-color: black;
+}
+
+#question {
+    background-color: black;
+}
+
+#name {
+    background-color: black;
+}
+
+#phone {
+    background-color: black;
+}
+
+#answer {
+    background-color: black;
+}
+
+#subject {
+    background-color: black;
+}
 
 
 
@@ -271,8 +292,3 @@ label {
     color: #008000;
     margin-top: 5px;
 }
-}
-
-
-
-
