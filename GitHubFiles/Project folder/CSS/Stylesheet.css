@@ -1,3 +1,5 @@
+/* created by student x22223487 until line 202 */
+
 @media (max-width: 600px) {
 
     .videoPlayer {
@@ -89,10 +91,10 @@ p {
 
 
 
-h1 {
+/* h1 {
     font-family: "Oswald", sans-serif;
     color: white;
-}
+} */
 
 h2 {
     font-size: 5em;
@@ -117,7 +119,7 @@ h2 {
 }
 
 .client {
-    height: 30px;
+    height: 90px;
 }
 
 .navbar {
@@ -159,7 +161,7 @@ h2 {
 }
 
 .over.about {
-    background: rgba(73, 58, 16, 0.274);
+    background: rgba(73, 58, 16, 0.49);
 }
 
 .inner {
@@ -198,7 +200,9 @@ body {
     z-index: -1000;
     overflow: hidden;
 } */
+/* end of student x22223487 */
 
+/* created by student x23222174 */
 /* Contact page css */
 
 
@@ -292,3 +296,5 @@ label {
     color: #008000;
     margin-top: 5px;
 }
+
+/* end of student x23222174 */
