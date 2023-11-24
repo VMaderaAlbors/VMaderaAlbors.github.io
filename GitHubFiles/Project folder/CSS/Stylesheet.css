@@ -200,7 +200,7 @@ button {
 h1 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 110;
+    font-size: 150;
     color: #daa520
 }
 
@@ -292,11 +292,13 @@ h1 {
     color: goldenrod;
     text-align: center;
     font-family: 'Oswald', sans-serif
+    font-size: 150;
 }
 
-h2 {
+h3 {
     color: goldenrod;
     font-family: 'Oswald', sans-serif
+    font-size: 150;
 }
 
 .testimonial {
