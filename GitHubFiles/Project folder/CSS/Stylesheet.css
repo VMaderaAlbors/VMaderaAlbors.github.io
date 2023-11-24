@@ -16,8 +16,13 @@
 }
 
 a {
+
+    text-align: center;
+    padding-top: 1%;
+    padding: auto;
     text-decoration: none;
     color: black;
+
 }
 
 
