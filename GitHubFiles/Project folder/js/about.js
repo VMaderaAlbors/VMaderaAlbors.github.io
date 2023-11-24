@@ -1,9 +1,6 @@
-
 let swich = true;
 let placeholder = document.getElementById('placeholder');
-
 function changeOver() {
-
     let start = `<div class="inner row">
 <div class="text-center">
     <h1 class="display-3  py-5" style="color: white;">About Us</h1>
@@ -13,11 +10,9 @@ function changeOver() {
         reference
         we can get, and we delight on it.</p>
 </div>
-
 </div>`;
     let game = `<div class = "inner row">
     <div id="images">
-
         <img src="../images/start-right.svg" alt="Start on the right">
     </div>
     <div id="instructions">
@@ -27,7 +22,6 @@ function changeOver() {
         <button class="button" onclick="startGame()">play</button>
     </div>
 </div>`;
-
     if (swich == true) {
         console.log('working');
         placeholder.innerHTML = game;
@@ -37,14 +31,11 @@ function changeOver() {
         placeholder.innerHTML = start;
         swich = true;
     }
-
 }
-
 let placeBT;
 let placeMsg;
 let placeImg;
 let randNum;
-
 function startGame() {
     placeBT = document.getElementById('replace');
     placeMsg = document.getElementById('instructions');
@@ -57,8 +48,6 @@ function startGame() {
     placeImg.innerHTML = image;
     randNum = Math.floor(Math.random() * 2);
 }
-
-
 function computeGame(userChoice) {
     let outcomeOne = `<h4>Nice guess, you win.</h4> <h4>Do you want to play again?</h4>`;
     let outcomeTwo = `<h4>Wrong guess, you loose.</h4> <h4>Do you want to play again?</h4>`;
