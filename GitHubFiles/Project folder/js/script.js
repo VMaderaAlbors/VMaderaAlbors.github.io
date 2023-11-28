@@ -1,48 +1,68 @@
-// Modify the validateForm function to return a boolean
-function validateForm(event) {
-    event.preventDefault(); // Prevent form submission by default
+// Contact Form validation
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    // Prevent form submission by default
+    event.preventDefault();
+
+    // Check the math question
+    var userAnswer = parseInt(document.getElementById('answer').value, 10);
+    if (userAnswer !== 4) {
+        alert('Incorrect answer. Please try again.');
+    } else {
+        // If the math question is correct, proceed with form validation
+        validateForm();
+    }
+});
+
+function validateForm() {
+    // Prevent form submission by default
+    event.preventDefault();
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
-    // Validate the math question
-    var userAnswer = parseInt(document.getElementById('answer').value, 10);
-    if (userAnswer !== 4) {
-        alert('Incorrect answer. Please try again.');
-        return false;
-    }
-
     if (name.trim() === '') {
         displayError('name-error', 'Name is required');
-        return false;
     } else {
         hideError('name-error');
     }
 
     if (email.trim() === '') {
         displayError('email-error', 'Email is required');
-        return false;
     } else if (!isValidEmail(email)) {
         displayError('email-error', 'Enter a valid email address');
-        return false;
     } else {
         hideError('email-error');
     }
 
     if (name.trim() !== '' && isValidEmail(email)) {
         displaySuccess('success-message', 'Form submitted successfully!');
-        return true;
     } else {
         hideSuccess('success-message');
-        return false;
     }
 }
 
-// Inside the 'validateForm' function, pass the 'event' parameter
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    // Prevent form submission by default
+    event.preventDefault();
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    validateForm(event);
+    // Check the math question
+    var userAnswer = parseInt(document.getElementById('answer').value, 10);
+    if (userAnswer !== 4) {
+        alert('Incorrect answer. Please try again.');
+    } else {
+        // If the math question is correct, proceed with form validation
+        validateForm();
+    }
 });
+
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Your other JavaScript functions remain unchanged
+
+// The 'displayError', 'hideError', 'displaySuccess', and 'hideSuccess' functions are assumed to be implemented correctly.
 
 
 function displayError(elementId, message) {
