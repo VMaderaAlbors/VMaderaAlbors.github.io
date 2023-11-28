@@ -1,22 +1,17 @@
-
 // Contact Form validation
-document.getElementById('math-form').addEventListener('submit', function(event) {
-   
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission by default
+    
     var userAnswer = parseInt(document.getElementById('answer').value, 10);
 
-
     if (userAnswer !== 4) {
-        
         alert('Incorrect answer. Please try again.');
-       
-        event.preventDefault();
     }
-    
 });
 
+function validateForm(event) {
+    event.preventDefault(); // Prevent form submission by default
 
-function validateForm() {
-    
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
@@ -41,11 +36,16 @@ function validateForm() {
     }
 }
 
+
+document.getElementById('contact-form').addEventListener('submit', validateForm);
+
 function isValidEmail(email) {
-    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+// Your other JavaScript functions remain unchanged
+
 
 function displayError(elementId, message) {
     const errorElement = document.getElementById(elementId);
