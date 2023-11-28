@@ -29,11 +29,14 @@ function validateForm() {
         hideSuccess('success-message');
         return false;
     }
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    validateForm(event);
 }
 
-// Inside the 'validateForm' function, pass the 'event' parameter
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    validateForm(event);
+
+
+
 });
 
 
