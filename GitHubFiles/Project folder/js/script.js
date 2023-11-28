@@ -1,6 +1,12 @@
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    if (!validateForm()) {
+        event.preventDefault(); // Prevent form submission if validation fails
+    }
+});
 
 function validateForm() {
-    event.preventDefault(); // Prevent form submission by default
+    // Prevent form submission by default
+    // event.preventDefault(); // Remove this line, as it's not needed here
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -30,10 +36,6 @@ function validateForm() {
         return false;
     }
 }
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    validateForm(event);
-});
 
 
 
