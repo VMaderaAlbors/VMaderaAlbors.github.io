@@ -1,16 +1,9 @@
-// Modify the validateForm function to return a boolean
-function validateForm(event) {
+
+function validateForm() {
     event.preventDefault(); // Prevent form submission by default
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-
-    // Validate the math question
-    var userAnswer = parseInt(document.getElementById('answer').value, 10);
-    if (userAnswer !== 4) {
-        alert('Incorrect answer. Please try again.');
-        return false;
-    }
 
     if (name.trim() === '') {
         displayError('name-error', 'Name is required');
@@ -38,20 +31,10 @@ function validateForm(event) {
     }
 }
 
-// Inside the 'validateForm' function, pass the 'event' parameter
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     validateForm(event);
 });
 
-
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Your other JavaScript functions remain unchanged
-
-// The 'displayError', 'hideError', 'displaySuccess', and 'hideSuccess' functions are assumed to be implemented correctly.
 
 
 function displayError(elementId, message) {
