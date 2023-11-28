@@ -9,6 +9,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     }
 });
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    validateForm(event);
+});
+
 function validateForm(event) {
     event.preventDefault(); // Prevent form submission by default
 
@@ -37,14 +41,6 @@ function validateForm(event) {
 }
 
 
-document.getElementById('contact-form').addEventListener('submit', validateForm);
-
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Your other JavaScript functions remain unchanged
 
 
 function displayError(elementId, message) {
