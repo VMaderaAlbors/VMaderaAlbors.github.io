@@ -40,7 +40,12 @@ function validateForm() {
 });
 
 
-
+// Validate the math question
+    var userAnswer = parseInt(document.getElementById('answer').value, 10);
+    if (userAnswer !== 4) {
+        alert('Incorrect answer. Please try again.');
+        return false;
+    }
 
 function displayError(elementId, message) {
     const errorElement = document.getElementById(elementId);
