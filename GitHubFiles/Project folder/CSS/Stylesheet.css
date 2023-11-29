@@ -267,8 +267,11 @@ label {
 }
 
 .success-message {
-    color: #008000;
+    color: white;
     margin-top: 5px;
+}
+.thankYouMessage {
+    color: white
 }
 
 
