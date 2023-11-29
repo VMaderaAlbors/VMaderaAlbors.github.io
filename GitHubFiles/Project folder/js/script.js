@@ -5,9 +5,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 function validateForm() {
-    // Prevent form submission by default
-    // event.preventDefault(); // Remove this line, as it's not needed here
-
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
@@ -28,14 +25,13 @@ function validateForm() {
         hideError('email-error');
     }
 
-    if (name.trim() !== '' && isValidEmail(email)) {
-        displaySuccess('success-message', 'Form submitted successfully!');
-        return true;
-    } else {
-        hideSuccess('success-message');
-        return false;
-    }
+    // Display the success message
+    displaySuccess('success-message', 'Form submitted successfully!');
+
+    // Return true to allow form submission
+    return true;
 }
+
 
 
 document.getElementById("userForm").addEventListener("submit", function (event) {
