@@ -1,3 +1,4 @@
+// Created by student x22223487
 let swich = true;
 let videoPlace = document.querySelector('video');
 function changeVideo() {
