@@ -38,6 +38,25 @@ function validateForm() {
 }
 
 
+document.getElementById("userForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting via HTTP
+
+            // Get user input
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            // Hide the form
+            document.getElementById("userForm").style.display = "none";
+
+            // Show the thank you message
+            var thankYouMessage = document.getElementById("thankYouMessage");
+            thankYouMessage.innerText = name + ", thank you for your details. We will be in touch via " + email + " shortly.";
+            document.getElementById("message").style.display = "block";
+        });
+
+
+
+
 
 function displayError(elementId, message) {
     const errorElement = document.getElementById(elementId);
